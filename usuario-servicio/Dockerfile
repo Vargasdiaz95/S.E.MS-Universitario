@@ -15,4 +15,4 @@ COPY target/asignaturas-servicio.jar asignaturas-servicio.jar
 EXPOSE 8082
 
 # Comando para ejecutar el microservicio
-ENTRYPOINT ["java", "-jar", "asignaturas-servicio.jar"]
+ENTRYPOINT ["java", "-jar", "usuario-servicio.jar"]

@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.asignaturas.entity;
+package com.example.matriculas.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -10,13 +10,13 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
-public class Asignatura {
+public class Matricula {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String nombre;
-    private String descripcion;
+    private Long usuarioId;
+    private Long asignaturaId;
 
     public Long getId() {
         return id;
@@ -26,21 +26,22 @@ public class Asignatura {
         this.id = id;
     }
 
-    public String getNombre() {
-        return nombre;
+    public Long getUsuarioId() {
+        return usuarioId;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setUsuarioId(Long usuarioId) {
+        this.usuarioId = usuarioId;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public Long getAsignaturaId() {
+        return asignaturaId;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setAsignaturaId(Long asignaturaId) {
+        this.asignaturaId = asignaturaId;
     }
+    
     
     
 }
