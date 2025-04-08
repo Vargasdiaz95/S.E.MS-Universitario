@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.example</groupId>
-	<artifactId>matriculas-servicio</artifactId>
+	<artifactId>usuario-servicio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>matriculas-servicio</name>
+	<name>usuario-servicio</name>
 	<description>Gestion Productos Reactivo en Spring Boot</description>
 	<url/>
 	<licenses>
