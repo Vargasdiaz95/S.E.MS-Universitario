@@ -4,12 +4,17 @@
  */
 package com.example.matriculas.service;
 
+import com.example.matriculas.client.Asignatura;
+import com.example.matriculas.client.Usuario;
+
 import com.example.matriculas.client.UsuarioClient;
 import com.example.matriculas.client.AsignaturaClient;
+
 import com.example.matriculas.entity.Matricula;
 import com.example.matriculas.repository.MatriculaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.List;
 
 @Service
@@ -39,9 +44,11 @@ public class MatriculaService {
             return matriculaRepository.save(matricula);
         }
         return null;
+        
     }
 
     public void eliminarPorId(Long id) {
         matriculaRepository.deleteById(id);
     }
+    
 }

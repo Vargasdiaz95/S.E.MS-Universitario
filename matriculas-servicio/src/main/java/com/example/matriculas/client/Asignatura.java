@@ -3,27 +3,28 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.example.matriculas.client;
+
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-/**@FeignClient(name = "asignaturas-servicio", url = "http://localhost:8082")
-public interface Usuario {
+/**
+@FeignClient(name = "asignaturas-servicio", url = "http://localhost:8082")
+public interface Asignatura {
     @GetMapping("/Asignatura/{id}")
     Asignatura encontrarPorId(@PathVariable Long id);
 }
 */
 
-
-public class Usuario {
+public class Asignatura {
     private Long id;
     private String nombre;
     private String email;
     private String tipo;
     
-    public Usuario() {}
+    public Asignatura() {}
 
-    public Usuario(Long id, String nombre, String email, String tipo) {
+    public Asignatura(Long id, String nombre, String email, String tipo) {
         this.id = id;
         this.nombre = nombre;
         this.email = email;
@@ -64,4 +65,3 @@ public class Usuario {
     }
     
 }
-
