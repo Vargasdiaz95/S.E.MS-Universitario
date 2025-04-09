@@ -10,7 +10,6 @@ import com.example.matriculas.entity.Matricula;
 import com.example.matriculas.repository.MatriculaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 
 @Service

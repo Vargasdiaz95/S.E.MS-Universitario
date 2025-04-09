@@ -42,6 +42,4 @@ public class Matricula {
         this.asignaturaId = asignaturaId;
     }
     
-    
-    
 }

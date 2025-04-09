@@ -4,7 +4,6 @@
  */
 package com.example.matriculas.client;
 
-import com.example.usuarios.Usuario;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
