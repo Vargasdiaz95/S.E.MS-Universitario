@@ -6,15 +6,20 @@ package com.example.asignaturas.controller;
 
 import com.example.asignaturas.entity.Asignatura;
 import com.example.asignaturas.service.AsignaturaService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import javax.persistence.EntityNotFoundException;
+import org.springframework.http.HttpStatus;
 
 @RestController
+@RequestMapping("/asignaturas")
+
 public class AsignaturaController {
-    
+
     @Autowired
     private AsignaturaService asignaturaService;
 
@@ -24,7 +29,7 @@ public class AsignaturaController {
     }
 
     @PostMapping
-    public Asignatura guardarAsignatura(@RequestBody Asignatura asignatura) {
+    public Asignatura guardarAsignatura(@Valid @RequestBody Asignatura asignatura) {
         return asignaturaService.guardar(asignatura);
     }
 
@@ -34,4 +39,8 @@ public class AsignaturaController {
         return ResponseEntity.noContent().build();
     }
 
+    @ExceptionHandler(EntityNotFoundException.class)
+    public ResponseEntity<String> handleEntityNotFound(EntityNotFoundException ex) {
+        return ResponseEntity.status(HttpStatus.NOT_FOUND).body(ex.getMessage());
+    }
 }

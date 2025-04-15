@@ -8,14 +8,6 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-/**
-@FeignClient(name = "asignaturas-servicio", url = "http://localhost:8082")
-public interface Asignatura {
-    @GetMapping("/Asignatura/{id}")
-    Asignatura encontrarPorId(@PathVariable Long id);
-}
-*/
-
 public class Asignatura {
     private Long id;
     private String nombre;
@@ -30,8 +22,7 @@ public class Asignatura {
         this.email = email;
         this.tipo = tipo;
     }
-
-    // Getters y setters
+    
     public Long getId() {
         return id;
     }
