@@ -6,4 +6,4 @@
  * Author:  farivadi
  * Created: 6/04/2025
  */
-
+INSERT INTO countries (id, nombre,email,especialidad) VALUES (1, 'Andres,Andres@univer.edu.co,Ingenierias');
