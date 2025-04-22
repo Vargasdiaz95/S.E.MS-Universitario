@@ -16,7 +16,7 @@ import javax.persistence.EntityNotFoundException;
 import org.springframework.http.HttpStatus;
 
 @RestController
-@RequestMapping("/asignaturas")
+@RequestMapping("/Asignatura")
 
 public class AsignaturaController {
 
