@@ -9,6 +9,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+
 @Entity
 public class Usuario {
     @Id
@@ -16,8 +17,8 @@ public class Usuario {
     private Long id;
     private String nombre;
     private String email;
-    private String tipo;
-
+    private String rol;
+    
     public Long getId() {
         return id;
     }
@@ -42,13 +43,11 @@ public class Usuario {
         this.email = email;
     }
 
-    public String getTipo() {
-        return tipo;
+    public String getRol() {
+        return rol;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setRol(String rol) {
+        this.rol = rol;
     }
-    
-    
 }
