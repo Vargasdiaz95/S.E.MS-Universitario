@@ -7,7 +7,9 @@ package com.example.usuariosservicio.repository;
 import com.example.usuariosservicio.entity.Docente;
 import com.example.usuariosservicio.entity.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface DocenteRepository extends JpaRepository<Usuario, Long> {
 
     public Docente save(Docente docente);
