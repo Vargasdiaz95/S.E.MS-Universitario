@@ -9,10 +9,10 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el archivo JAR del microservicio al contenedor
-COPY target/usuario-servicio.jar usuario-servicio.jar
+COPY target/matriculas-servicio.jar matriculas-servicio.jar
 
 # Exponer el puerto en el que la aplicación se ejecutará
-EXPOSE 8080
+EXPOSE 8082
 
 # Comando para ejecutar la aplicación
-ENTRYPOINT ["java", "-jar", "usuario-servicio.jar"]
+ENTRYPOINT ["java", "-jar", "matriculas-servicio.jar"]

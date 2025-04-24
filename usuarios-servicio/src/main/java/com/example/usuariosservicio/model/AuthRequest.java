@@ -4,10 +4,6 @@
  */
 package com.example.usuariosservicio.model;
 
-/**
- *
- * @author farivadi
- */
 public class AuthRequest {
     
     private String username;
