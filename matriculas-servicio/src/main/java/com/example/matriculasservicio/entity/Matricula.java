@@ -3,16 +3,18 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package com.example.matriculasservicio.entity;
+
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 @Entity
 public class Matricula {
-
+    
+    
     @Id
     private Long id;
+    private Long usuarioId;
+    private Long asignaturaId;
 
     public Long getId() {
         return id;
@@ -37,7 +39,6 @@ public class Matricula {
     public void setAsignaturaId(Long asignaturaId) {
         this.asignaturaId = asignaturaId;
     }
-    private Long usuarioId;
-    private Long asignaturaId;
     
 }
+

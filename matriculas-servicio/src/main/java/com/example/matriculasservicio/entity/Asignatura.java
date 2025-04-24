@@ -2,14 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package com.example.asignaturasservicio.entity;
+package com.example.matriculasservicio.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-
-@Entity
 public class Asignatura {
-    @Id
     private Long id;
     private String nombre;
     private String descripcion;
@@ -39,3 +34,4 @@ public class Asignatura {
     }
     
 }
+

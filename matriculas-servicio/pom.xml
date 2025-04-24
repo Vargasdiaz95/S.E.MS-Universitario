@@ -111,18 +111,6 @@
 	  <version>3.1.8</version>
 	  <type>jar</type>
 	 </dependency>
-	 <dependency>
-	  <groupId>com.example</groupId>
-	  <artifactId>asignaturas-servicio</artifactId>
-	  <version>0.0.1-SNAPSHOT</version>
-	  <type>jar</type>
-	 </dependency>
-	  <dependency>
-	  <groupId>com.example</groupId>
-	  <artifactId>usuarios-servicio</artifactId>
-	  <version>0.0.1-SNAPSHOT</version>
-	  <type>jar</type>
-	 </dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>

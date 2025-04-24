@@ -4,14 +4,15 @@
  */
 package com.example.matriculasservicio.client;
 
-
-import com.example.asignaturasservicio.entity.Asignatura;
+import com.example.matriculasservicio.entity.Asignatura;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-@FeignClient(name = "asignaturas-servicio", url = "http://localhost:8082")
+@FeignClient(name = "asignaturas-servicio")
 public interface AsignaturaClient {
+
     @GetMapping("/asignaturas/{id}")
-    Asignatura encontrarPorId(@PathVariable Long id);
+    Asignatura getAsignaturaById(@PathVariable("id") Long id);
 }
+
