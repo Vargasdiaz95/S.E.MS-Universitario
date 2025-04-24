@@ -40,3 +40,12 @@ Incluye aquí tus datos personales y cualquier información relevante sobre los 
    git clone https://github.com/Vargasdiaz95/S.E.MS-Universitario
    cd S.E.MS-Universitario
    ```
+## Verificar el Despliegue
+Eureka Server: http://localhost:8761
+Config Server: http://localhost:8888
+Usuarios Servicio: http://localhost:8081/actuator/health
+Asignaturas Servicio: http://localhost:8082/actuator/health
+Matriculas Servicio: http://localhost:8083/actuator/health
+
+## Comando
+mvn spring-boot:run

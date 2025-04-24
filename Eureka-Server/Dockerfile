@@ -3,16 +3,17 @@
 # Click nbfs://nbhost/SystemFileSystem/Templates/Other/Dockerfile to edit this template
 
 # Usar una imagen base de Java
-FROM openjdk:11-jre-slim
+FROM openjdk:17-jdk-slim
 
-# Establecer el directorio de trabajo
+# Establecer el directorio de trabajo dentro del contenedor
 WORKDIR /app
 
-# Copiar el archivo JAR del microservicio
+# Copiar el archivo JAR del microservicio al contenedor
 COPY target/eureka-server.jar eureka-server.jar
 
-# Exponer el puerto
+# Exponer el puerto en el que la aplicación se ejecutará
 EXPOSE 8761
 
-# Comando para ejecutar el microservicio
+# Comando para ejecutar la aplicación
 ENTRYPOINT ["java", "-jar", "eureka-server.jar"]
+
