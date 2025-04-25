@@ -3,16 +3,16 @@
 # Click nbfs://nbhost/SystemFileSystem/Templates/Other/Dockerfile to edit this template
 
 # Usar una imagen base de Java
-FROM openjdk:17-jdk-slim
+FROM openjdk:11-jre-slim
 
-# Establecer el directorio de trabajo dentro del contenedor
+# Establecer el directorio de trabajo
 WORKDIR /app
 
-# Copiar el archivo JAR del microservicio al contenedor
+# Copiar el archivo JAR del microservicio
 COPY target/config-server.jar config-server.jar
 
-# Exponer el puerto en el que la aplicación se ejecutará
+# Exponer el puerto
 EXPOSE 8888
 
-# Comando para ejecutar la aplicación
+# Comando para ejecutar el microservicio
 ENTRYPOINT ["java", "-jar", "config-server.jar"]
