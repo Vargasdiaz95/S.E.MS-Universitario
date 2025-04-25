@@ -9,7 +9,8 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el archivo JAR del microservicio al contenedor
-COPY target/matriculas-servicio.jar matriculas-servicio.jar
+#COPY target/matriculas-servicio.jar matriculas-servicio.jar
+COPY target/matriculas-servicio-0.0.1-SNAPSHOT.jar matriculas-servicio.jar
 
 # Exponer el puerto en el que la aplicación se ejecutará
 EXPOSE 8082

@@ -9,7 +9,8 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copiar el archivo JAR del microservicio al contenedor
-COPY target/usuarios-servicio.jar usuarios-servicio.jar
+#COPY target/usuarios-servicio.jar usuarios-servicio.jar
+COPY target/usuarios-servicio-0.0.1-SNAPSHOT.jar usuarios-servicio.jar
 
 # Exponer el puerto en el que la aplicación se ejecutará
 EXPOSE 8083

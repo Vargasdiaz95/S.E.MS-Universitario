@@ -9,7 +9,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copiar el archivo JAR del microservicio
-COPY target/config-server.jar config-server.jar
+COPY target/config-server-0.0.1-SNAPSHOT.jar config-server.jar
 
 # Exponer el puerto
 EXPOSE 8888

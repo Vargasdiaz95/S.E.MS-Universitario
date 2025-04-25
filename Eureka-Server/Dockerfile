@@ -9,7 +9,7 @@ FROM openjdk:11-jre-slim
 WORKDIR /app
 
 # Copiar el archivo JAR del microservicio
-COPY target/eureka-server.jar eureka-server.jar
+COPY target/Eureka-Server-0.0.1-SNAPSHOT.jar eureka-server.jar
 
 # Exponer el puerto
 EXPOSE 8761
