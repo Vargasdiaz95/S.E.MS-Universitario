@@ -43,9 +43,9 @@ Incluye aquí tus datos personales y cualquier información relevante sobre los 
 ## Verificar el Despliegue
 Eureka Server: http://localhost:8761
 Config Server: http://localhost:8888
-Usuarios Servicio: http://localhost:8081/actuator/health
-Asignaturas Servicio: http://localhost:8082/actuator/health
-Matriculas Servicio: http://localhost:8083/actuator/health
+Usuarios Servicio: http://localhost:8083/actuator/health
+Asignaturas Servicio: http://localhost:8081/actuator/health
+Matriculas Servicio: http://localhost:8082/actuator/health
 
 ## Comando
 mvn spring-boot:run
