@@ -39,3 +39,4 @@ jobs:
         sshpass -p $SERVER_PASSWORD ssh $SERVER_USER@$SERVER_IP 'docker-compose down'
         sshpass -p $SERVER_PASSWORD scp docker-compose.yaml $SERVER_USER@$SERVER_IP:~/deployments/
         sshpass -p $SERVER_PASSWORD ssh $SERVER_USER@$SERVER_IP 'docker-compose up -d'
+        
